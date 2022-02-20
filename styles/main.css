@@ -7,17 +7,31 @@ Azure X: #E6FAFC
 Fulvous: #9590A8
 Beaver: #709255
 Black Olive: #32322C
-*/
 
+--lavender-web: #f0edfd;
+--light-cyan: #c8f5f9;
+--warm-black: #104547;
+--oxford-blue: #192238;
+--black-olive: #32322c;
+
+*/
 /*
 GLOBAL
 */
+
+
 
 body{ 
     background-color: #C8F5F9 ;
     margin: 0;
     padding:0;
     border: 0;
+    font-family: 'Lora', serif;
+}
+h1,h2{
+    margin: 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
 h1 {
@@ -25,10 +39,12 @@ h1 {
     font-size: 70px;
 }
 
-h1,h2{
-    margin: 0;
-    text-align: center;
+
+h2{
+    padding-top: 10px;
+    font-size: 30px;
 }
+
 
 
 .fa {
@@ -52,6 +68,12 @@ h1,h2{
     height: 100%;
 }
 
+.content-wrap{
+    width: 85%;
+    max-width:600px;
+    margin: 0  auto;
+}
+
 
 /*
 MAIN
@@ -65,8 +87,8 @@ MAIN
 
 .introduction{
     margin: 0;
-    background-color: #32322C;
-    color: #C8F5F9;
+    background-color: #192238;
+    color: #fefeff;
 }
 
 /**************** EDUCATION ****************/
@@ -103,5 +125,5 @@ SIDEBAR
 */
 .skills-bar {
     flex:0 1 15%;
-    background-color: #56282D;
+    background-color: #32322c;
 }
