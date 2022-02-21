@@ -26,12 +26,13 @@ body{
     margin: 0;
     padding:0;
     border: 0;
-    font-family: 'Lora', serif;
+    font-family: 'Lato', sans-serif;
 }
+
+
 h1,h2{
     margin: 0;
     text-align: center;
-    font-family: 'Lato', sans-serif;
 }
 
 h1 {
@@ -42,10 +43,18 @@ h1 {
 
 h2{
     padding-top: 10px;
+    padding-bottom: 20px;
     font-size: 30px;
 }
 
+h3{
+    margin:0; 
+}
 
+p{
+    margin:0;
+    line-height: 1.5;
+}
 
 .fa {
     padding: 8px;
@@ -69,18 +78,16 @@ h2{
 }
 
 .content-wrap{
-    width: 85%;
-    max-width:600px;
+    width: 95%;
+    max-width:700px;
     margin: 0  auto;
 }
-
-
 /*
 MAIN
 */
 
 .main-content{
-    flex: 1 0 85%;
+    flex: 1 0 80%;
 }
 
 /**************** INTRO ****************/
@@ -96,7 +103,14 @@ MAIN
 
 /**************** PROJECTS  ****************/
 
+.project-item {
+    display: flex;
+}
 
+.project-title {
+    flex: 0 0 50%;
+    
+}
 /**************** QUALITIES ****************/
 
 
@@ -120,10 +134,40 @@ MAIN
     display: flex;
     justify-content: space-between;
 }
+
+
+
 /*
 SIDEBAR
 */
+
 .skills-bar {
-    flex:0 1 15%;
+    flex:0 1 20%;
+    max-width: 290px;
+    min-width: 140px;
     background-color: #32322c;
+    color:#fefeff
+}
+
+.skills-bar p{
+    margin:10px 0;
+}
+.skills-wrap {
+    width: 85%;
+    max-width:600px;
+    text-align: center;
+    margin:0 auto;
+}
+
+.column-list {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    flex-wrap: wrap;
+    margin-left:20%
+    
+}
+
+.skills-wrap > h3 {
+    text-decoration: underline;
 }
